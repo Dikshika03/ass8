@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Quadratic Equation</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body style="margin-top: 50px;background-image: url(https://3718aeafc638f96f5bd6-d4a9ca15fc46ba40e71f94dec0aad28c.ssl.cf1.rackcdn.com/journal-applied-mathematics-and-statistics.png);" onload="init();" data-gr-c-s-loaded="true">
+       <div class="container">
+           <h1 style="font-weight: 900px"><b>Second Degree Equations</b></h1>
+           <h2 style="font-weight: 800px"><b>Quadratic Equation:<span id="a">a</span>x<sup>2</sup>+<span id="b">b</span>x+<span id="c">c</span></b></h2>
+           <h3 style="font-weight: 700px"><b>Enter the coefficients of a, b and c in the field below.</b></h3>
+    <form style="margin:20px;">
+        Value of a: <br>
+        <input  style="margin:5px;height:40px;width:90%;border-radius:4px;" type="number" name="valueofa" min="0" placeholder="1" id="valueA" onchange="updateEquation()"> <br>
+        Value of b: <br>
+        <input  style="margin:5px;height:40px;width:90%;border-radius:4px;" type="number" name="valueofb" min="0" placeholder="1" id="valueB" onchange="updateEquation()"> <br>
+        Value of c: <br>
+        <input  style="margin:5px;height:40px;width:90%;border-radius:4px;" type="number" name="valueofc" min="0" placeholder="1" id="valueC" onchange="updateEquation()"> <br>
+        <input  style="margin:5px;background-color: DodgerBlue;color:white;border-radius: 4px;height: 40px;width: 15%;" type="button" onclick="solve()" value="Solve equation">
+    </form>
+           <p style="margin-left:30px;">Result:<p>
+          <span id="result"></span>
+       </div>
+       <script src="script.js"></script>
+   </body>
+</html>
